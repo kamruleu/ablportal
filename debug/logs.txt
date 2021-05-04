@@ -1,0 +1,28 @@
+SELECT DATE_FORMAT(xdate,'%d-%m-%Y') as txndate,stno,xcomtype as comtype,xcom as com FROM expresstotrep WHERE  stno between 0000০ and 99999999 and xrdin = 'ABR-891531-00004'  order by stno descArray
+(
+    [0] => 42S22
+    [1] => 1054
+    [2] => Unknown column '0000০' in 'where clause'
+)
+
+SELECT DATE_FORMAT(xdate,'%d-%m-%Y') as txndate,stno,xcomtype as comtype,xcom as com FROM expresstotrep WHERE  stno between 0000০ and 99999999 and xrdin = 'ABR-891531-00004'  order by stno descArray
+(
+    [0] => 42S22
+    [1] => 1054
+    [2] => Unknown column '0000০' in 'where clause'
+)
+
+SELECT DATE_FORMAT(xdate,'%d-%m-%Y') as txndate,stno,bin,xcomtype as comtype,truncate(xcom-(xcom*(xsrctaxpct/100)),2) as com FROM mlmtotrep WHERE  stno between ১ and ১৯৭৫৩২ and xrdin = 'ABR-719981-00156' order by stno desc, xcomtypeArray
+(
+    [0] => 42S22
+    [1] => 1054
+    [2] => Unknown column '১' in 'where clause'
+)
+
+SELECT DATE_FORMAT(xdate,'%d-%m-%Y') as txndate,stno,bin,xcomtype as comtype,truncate(xcom-(xcom*(xsrctaxpct/100)),2) as com FROM mlmtotrep WHERE  stno between ১ and ১৯৭৫৩২ and xrdin = 'ABR-719981-00156' order by stno desc, xcomtypeArray
+(
+    [0] => 42S22
+    [1] => 1054
+    [2] => Unknown column '১' in 'where clause'
+)
+
